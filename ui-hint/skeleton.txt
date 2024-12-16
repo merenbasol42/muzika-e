@@ -1,4 +1,3 @@
-
 <Screen>: Vertical {
     <Header>,
     <Play Page> | <Edit Page>
