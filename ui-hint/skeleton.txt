@@ -1,0 +1,61 @@
+
+<Screen>: Vertical {
+    <Header>,
+    <Play Page> | <Edit Page>
+}
+    <Header>: Vertical {
+        <Notificator>,
+        header_seperator,
+        <Navigator>
+    }
+        <Notificator> : Horizontal {
+            play_state_icon,
+            notification_lbl,
+            play_mode_icon,
+        }
+
+        <Navigator> : Horizontal {
+            page_ch_button,
+            page_title_card,
+            settings_button
+        }
+
+
+<Play Page> : Vertical {
+    playlist_selector_combobox
+    song_info_table,
+    <Volumer>,
+    <Player>
+}
+
+    <Volumer>: Horizontal {
+        volume_text_lbl,
+        volume_slider,
+        volume_value_lbl
+    }
+
+    <Player>: Horizontal {
+        backward_button,
+        rewind_button,
+        play_pause_button,
+        fast_forward_button,
+        next_button
+    }
+
+<Edit Page> : Vertical {
+    Horizontal {
+        create_playlist_button,
+        playlist_selector_combobox,
+        delete_playlist_button
+    },
+    song_path_table,
+    <Editor>
+}
+
+    <Editor> : Vertical {
+        Horizontal {
+            add_song_button,
+            edit_mode_togg_button,
+            remove_song_button
+        }
+    }
